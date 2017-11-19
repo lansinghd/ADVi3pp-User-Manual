@@ -12,7 +12,7 @@
 * **Version**: Displays the version number of ADVi3++. Taps on this area to show an About panel with information about the release installed.
 * **Controls**: Taps on this button to display the **Controls** panel with tools such as Load and Unload Filament, Move, etc.
 * **Print**: Taps on this button to display the **Print** panel (if your are printing) or the Temperature graph (if you are not).
-* **Measures**: Taps on this button to display the **Measures** panel with tools to help you adjust some parameters of your printer.
+* **Tuning**: Taps on this button to display the **Tuning** panel with tools to help you adjust some parameters of your printer.
 * **Settings**: Taps on this button to display the **Settings** panel. In this panel, you can view and modify several parameters of the printer.
 
 ## Controls
@@ -128,7 +128,7 @@ The **USB Print** screen is displayed only when a print is running through the U
 * **Back**: If you press the **Back** button, the printing continues and it goes back to the previous screen.
 
 
-## Measures
+## Tuning
 
 ![](assets/026_calibration.png)
 
