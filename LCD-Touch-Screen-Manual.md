@@ -1,6 +1,7 @@
 # LCD Touch Screen
 
 ![Boot](assets/boot.gif)
+
 *Boot animation*
 
 ## Main panel
@@ -227,12 +228,15 @@ This tool helps you adjust adjust the number of steps per millimeter for the X, 
 [XYZ 20mm Calibration Cube by iDig3Dprinting](https://www.thingiverse.com/thing:1278865)
 
 ![](assets/measure-x.jpg)
+
 *Measure X*
 
 ![](assets/measure-y.jpg)
+
 *Measure Y*
 
 ![](assets/measure-z.jpg)
+
 *Measure Z*
 
 ## PID tuning
