@@ -1,5 +1,15 @@
+---
+title: "ADVi3++ User Manual"
+author: [Sebastien Andrivet]
+date: 2017-11-25
+titlepage: true
+titlepage-color: "ff7f00"
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+...
+
 # ADVi3++ User Manual
-Version 2.0 - October 17, 2017
+Version 2.0 - November 17, 2017
 
 ![](assets/boot.gif)
 

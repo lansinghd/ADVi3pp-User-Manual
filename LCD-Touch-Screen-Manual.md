@@ -33,7 +33,7 @@ This panel gives you access to tools to control your printer.
 
 Select the extruder's target temperature you want to use (with the plus and minus buttons) and press either the **Load** or **Unload** button. 
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 ![Load & Unload](assets/032_load_2.png)
 
@@ -49,9 +49,9 @@ When the target temperature is almost reached, the extruder motor starts  unextr
 
 You have the choice of three presets (both bed and hot-end temperatures). You can adjust each value by pressing the plus and minus buttons. To start heating bed and hot-end, press one of the checkmark button. To stop heating, press the cooldown button on the top right corner.
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement a temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement a temperature.*
 
-**⚠️ Important**: *If you press the __Back__ button, the printer continues to heat the bed and the hot-end. Press __Cooldown__ on this screen or on the __Tools__ screen to stop heating.*
+**Important**: *If you press the __Back__ button, the printer continues to heat the bed and the hot-end. Press __Cooldown__ on this screen or on the __Tools__ screen to stop heating.*
 
 ### Move
 
@@ -59,11 +59,11 @@ You have the choice of three presets (both bed and hot-end temperatures). You ca
 
 * You can move the head (X & Z) and the bed (Y) by pressing the buttons with arrows.
 
-**💡 Tip**: *Keep the button pressed to quickly move the head or the bed.*
+**Tip**: *Keep the button pressed to quickly move the head or the bed.*
 
 * Press the `E +` button to extrude some filament; press the `E -` button to un-extrude.
 
-**⚠️ Important**: *The printer will extrude or un-extrude only if the temperature of the hot-end has reached a minimal value.*
+**Important**: *The printer will extrude or un-extrude only if the temperature of the hot-end has reached a minimal value.*
 
 * Press a button with a house icon to home the head (X & Z) or the bed (Y). Press the button with the star (*) to return both bed and hot-end to their home positions.
 
@@ -134,7 +134,7 @@ The **USB Print** screen is displayed only when a print is running through the U
 
 This panel gives you access to tools to help you adjust some parameters of your printer.
 
-**⚠️ Important**: Some parameters are directly derived from the mechanical parts of the printer. Unless you change these parts (like the step motors), there is no need to change them.
+**Important**: Some parameters are directly derived from the mechanical parts of the printer. Unless you change these parts (like the step motors), there is no need to change them.
 
 * **Level**: Tool to help you level your bed.
 * **Extruder**: Tool to help you adjust the number of steps per millimeter for the extruder motor.
@@ -163,7 +163,7 @@ This tool helps you level your bed.
 
 * Once you are satisfied with the leveling, press the **Back** button.
 
-**💡 Tip**: *A feeler gauge are cheap and you can buy one for a few dollars on Amazon, Banggood, etc. For example (randomly chosen items)*:
+**Tip**: *A feeler gauge are cheap and you can buy one for a few dollars on Amazon, Banggood, etc. For example (randomly chosen items)*:
 
 ![](assets/gauge1.png)
 
@@ -176,7 +176,7 @@ This tool helps you level your bed.
 
 This tool helps you adjust adjust the number of steps per millimeter for the extruder motor. There is no need to do this more than once, except if you change some mechanical parts.
 
-**⚠️ Important**: *This parameter (number of steps per millimeter) is directly derived from the mechanical parts of the printer (the step motor, the gear, ...) Unless you change these parts (like the gear), there is no need to change this parameter. Its default value is `400.5`.*
+**Important**: *This parameter (number of steps per millimeter) is directly derived from the mechanical parts of the printer (the step motor, the gear, ...) Unless you change these parts (like the gear), there is no need to change this parameter. Its default value is `400.5`.*
 
 ![](assets/050_extruder_1.png)
 
@@ -186,7 +186,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 * Select the extruder's target temperature you want to use (with the plus and minus buttons) and press the arrow button (top-right corner). 
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * The printer starts heating the hot-end and when the target temperature is reached, it extrudes 100 mm of filament.
 
@@ -198,7 +198,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 ![](assets/054_extruder_3.png)
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the value.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the value.*
 
 * The computed value (E) is displayed and you can adjust it manually if you want:
 
@@ -210,7 +210,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 This tool helps you adjust adjust the number of steps per millimeter for the X, Y and Z motors. There is no need to do this more than once, except if you change some mechanical parts.
 
-**⚠️ Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the step motor, ...) Unless you change these parts (like the motors), there is no need to change this parameter. The default values are `81`, `81`, and `400.5`.*
+**Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the step motor, ...) Unless you change these parts (like the motors), there is no need to change this parameter. The default values are `81`, `81`, and `400.5`.*
 
 * Print a cube 20x20x20 mm  and enter it actual dimensions (make more than one measure for each side and take the average):
 
@@ -222,7 +222,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the X, 
 
 * Press the **Back** button the restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
 
-**💡 Tips**: *There are several calibration cubes on [Thingiverse](https://www.thingiverse.com). For example:*
+**Tips**: *There are several calibration cubes on [Thingiverse](https://www.thingiverse.com). For example:*
 
 ![](https://thingiverse-production-new.s3.amazonaws.com/renders/be/4c/3a/a8/d9/xyzCalibration_cube_preview_featured.jpg)
 [XYZ 20mm Calibration Cube by iDig3Dprinting](https://www.thingiverse.com/thing:1278865)
@@ -249,7 +249,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the X, 
 
 * Select the extruder's target temperature you want to use (with the plus and minus buttons) and press the arrow button (top-right corner). 
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * The PID tuning process starts. The printer increase and decrease the temperature of the hot-end around the target value:
 
@@ -288,7 +288,7 @@ This screen display the step settings of the motors.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 
@@ -302,7 +302,7 @@ This screen display the feedrate (speed) settings of the motors.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 
@@ -316,7 +316,7 @@ This screen display the acceleration settings of the motors.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 
@@ -330,7 +330,7 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 * To adjust them manually, press the minus or plus buttons.
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 
@@ -348,7 +348,7 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 * To adjust the PID settings manually, press the minus or plus buttons.
 
-**💡 Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 

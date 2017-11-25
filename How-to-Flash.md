@@ -72,6 +72,18 @@ If you prefer graphical applications, [Etcher](https://etcher.io) is a great mul
 - Re-assemble the front panel, do not forget the two M3 screws on the top
 - Turn the printer on. You know have the new version of the LCD images
 
+### LCD Enclosure
+
+![](https://cdn.thingiverse.com/renders/08/b4/6b/6a/29/3e776fd38ccd98efaf288bf79aeab604_preview_featured.jpg) 
+
+From [Thingiverse "Wanhao Duplicator I3 Plus LCD enclosure" by bosbessenbasje](https://www.thingiverse.com/thing:2369322):
+
+>  The standard enclosure puts the LCD in a 90 degrees angle towards the table and that makes it hard to read. This enclosure will put the LCD in 60 degrees angle which improves readability at the cost of a slightly large space on the table.
+
+> Note that the new enclosure allows you to insert a **micro SD in the LCD to upgrade the LCD firmware** if you want to. You will probably need some pliers to do it though.
+
+I highly recommend this LCD enclosure. It will simplify a lot your life.
+
 ## Part 2 - Flashing the mainboard firmware
 
 There are several ways to flash the mainboard firmware. The first step is to download the firmware from the **Releases** page on [GitHub](https://github.com/andrivet/ADVi3pp-Marlin/releases):
@@ -79,6 +91,8 @@ There are several ways to flash the mainboard firmware. The first step is to dow
 [ADVi3pp-Mainboard-x.x.x.hex](https://github.com/andrivet/ADVi3pp-Marlin/releases)
 
 Then choose the option you are the most comfortable with.
+
+**Note**: *It is not possible to flash the mainboard using the SD card slot of the printer.*
 
 ### Mainboard Option 1 - Flashing using Cura
 
