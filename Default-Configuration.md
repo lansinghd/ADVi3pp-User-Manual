@@ -21,16 +21,16 @@ The default parameters of this firmware are the following:
 | Min | 0 |
 | Travel | 0 |
 | **Acceleration Settings** | |
-| Max X | 3000 |
-| Max Y | 3000 |
+| Max X | 1000 |
+| Max Y | 1000 |
 | Max Z | 100 |
-| Max E | 3000 |
+| Max E | 1000 |
 | Print | 800 |
 | Retract | 800 |
 | Travel | 800 |
 | **Jerk Settings** | |
-| X | 10 |
-| Y | 10 |
+| X | 8 |
+| Y | 8 |
 | Z | 0.4 |
 | E | 1.0 |
 

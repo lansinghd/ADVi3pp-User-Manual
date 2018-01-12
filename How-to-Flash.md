@@ -21,7 +21,7 @@ You have two possibilities to flash:
 
 * Download the LCD resources: [ADVi3pp-LCD-x.x.x.zip](https://github.com/andrivet/ADVi3pp-Marlin/releases)
 * Unzip the file somewhere
-* Copy manually all the files and folders in the uncompressed zip file to the root of a microSD card. The microSD card **has** to be formatted with the following parameters: FAT32, 4096 bytes per cluster (i.e. 8 sectors). 
+* Copy manually all the files and folders in the uncompressed zip file to the root of a microSD card. The microSD card **has** to be formatted with the following parameters: FAT32, 4096 bytes per cluster (i.e. 8 sectors).
 * To format under Linux (and macOS with the `dosfstools` Homebrew package):
 
 ```
@@ -33,7 +33,7 @@ Of course, replace `/dev/disk2` with the right value.
 * To format under Windows (Command Prompt):
 
 ```
-format G: /FS:FAT32 /V:LCD /A:4096 
+format G: /FS:FAT32 /V:LCD /A:4096
 ```
 Of course, replace `G:` with the right volume letter.
 
@@ -67,14 +67,14 @@ If you prefer graphical applications, [Etcher](https://etcher.io) is a great mul
 
 - Turn on the printer (either by connecting it to power or by connecting the USB slot to the computer)
 - The screen turns blue and then every image will appear one by one
-- After around 2 or 3 minutes, the screen turns black
+- After around 2 or 3 minutes, no more images appear
 - Turn off the printer and remove the microSD card
 - Re-assemble the front panel, do not forget the two M3 screws on the top
 - Turn the printer on. You know have the new version of the LCD images
 
 ### LCD Enclosure
 
-![](https://cdn.thingiverse.com/renders/08/b4/6b/6a/29/3e776fd38ccd98efaf288bf79aeab604_preview_featured.jpg) 
+![](https://cdn.thingiverse.com/renders/08/b4/6b/6a/29/3e776fd38ccd98efaf288bf79aeab604_preview_featured.jpg)
 
 From [Thingiverse "Wanhao Duplicator I3 Plus LCD enclosure" by bosbessenbasje](https://www.thingiverse.com/thing:2369322):
 
@@ -155,7 +155,7 @@ The firmware is compiled and uploaded. When the uploading is finished, the print
 
 ### Mainboard Option 4 - Flashing using `avrdude`
 
-All the previous options are using [`avrdude`](http://www.nongnu.org/avrdude/) underneath. `avrdude` is an utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers. It can be downloaded from your favorite repository or from [Savannah Non-GNU web site](http://download.savannah.gnu.org/releases/avrdude/). 
+All the previous options are using [`avrdude`](http://www.nongnu.org/avrdude/) underneath. `avrdude` is an utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers. It can be downloaded from your favorite repository or from [Savannah Non-GNU web site](http://download.savannah.gnu.org/releases/avrdude/).
 
 * For Debian/Ubuntu:
 
@@ -188,6 +188,3 @@ or (Linux):
 ```
 avrdude -v -p m2560 -c wiring -P /dev/ttyUSB0 -U flash:w:ADVi3pp-Mainboard-2.0.0.hex:i -D
 ```
-
-
-

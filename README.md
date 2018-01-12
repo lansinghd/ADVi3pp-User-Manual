@@ -1,5 +1,5 @@
 # ADVi3++ User Manual
-Version 2.0 - November 17, 2017
+Version 2.1 - January 12, 2018
 
 ![](assets/boot.gif)
 
@@ -13,9 +13,9 @@ Version 2.0 - November 17, 2017
 
 # Introduction
 
-**ADVi3++** is a custom firmware for **Wanaho** Duplicator i3+ printers (and their clones like the Monoprice Select Plus). It is based on the latest stable release of Marlin (1.1.6) and adds some new specific features. It has the following features when compared to the stock Wanhao firmwares:
+**ADVi3++** is a custom firmware for **Wanaho** Duplicator i3+ printers (and their clones like the Monoprice Select Plus). It is based on the latest stable release of Marlin and adds some new specific features. It has the following features when compared to the stock Wanhao firmwares:
 
-* Based on Marlin 1.1.6 (Wanhao firmware is based on a fork of Marlin created in 2014)
+* Based on Marlin 1.1.8 (Wanhao firmware is based on a fork of Marlin created in 2014)
 * New LCD screens in color (yes, your LCD display is able to show colors)
 * Access on the LCD display to more printer parameters like Feedrate, Acceleration and Jerk settings
 * Calibration of the X, Y, and Z motors and of the extruder
@@ -43,14 +43,14 @@ I am not affiliated, associated, authorized, endorsed by, or in any way official
 
 **ADVi3++**
 
-* Copyright &copy; 2017 Sebastien Andrivet [GitHub advi3pp-Marlin project](https://github.com/andrivet/advi3pp-Marlin])
-* Copyright &copy; 2016 [MarlinFirmware](https://github.com/MarlinFirmware/Marlin)
+* Copyright &copy; 2017-2018 Sebastien Andrivet [GitHub advi3pp-Marlin project](https://github.com/andrivet/advi3pp-Marlin])
+* Copyright &copy; 2016-2018 [MarlinFirmware](https://github.com/MarlinFirmware/Marlin)
 * Based on Sprinter and grbl.
 * Copyright &copy; 2011 Camiel Gubbels / Erik van der Zalm
 
 **ADVi3++ User Manual**
 
-* Copyright &copy; 2017 Sebastien Andrivet
+* Copyright &copy; 2018 Sebastien Andrivet
 
 ## Licenses
 
