@@ -1,12 +1,13 @@
 # Resources
 
 * [ADVi3++ Source Code](https://github.com/andrivet/ADVi3pp-Marlin)
+* [ADVi3++ Facebook Page](http://facebook.com/advi3pp/)
 * [Marlin - Open Source 3D Printer Firmware](http://marlinfw.org)
 * [RepRap, humanity's first general-purpose self-replicating manufacturing machine.](RepRap.org)
 * [Duplicator i3 Plus Facebook Group](https://www.facebook.com/groups/i3plus/)
 * [PrusaPrinters Calculator](https://www.prusaprinters.org/calculator/)
 
-**Note:** *In the past, it was possible to download the following resources directory from the [dwin.com.cn](http://dwin.com.cn) website. It is no more the case (you get plenty of errors) so I copy them into the __ADVi3++__ repository.*
+**Note:** *In the past, it was possible to download the following resources directory from the [dwin.com.cn](http://dwin.com.cn) website. It is no more the case so I copied them into the __ADVi3++__ repository.*
 
 * [DMT48270M043_05W (LCD Touch Display) Datasheet](https://github.com/andrivet/ADVi3pp-LCD/blob/master/Resources/DMT48270M043_05W_DATASHEET.pdf)
 * [DWIN DGUS Display Development Guide version 4.0 - 2014](https://github.com/andrivet/ADVi3pp-LCD/blob/master/Resources/DWIN%20DGUS%20DEV%20GUIDE_V40_2014.pdf)

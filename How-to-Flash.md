@@ -2,18 +2,16 @@
 
 There are two parts to flash:
 
-* The LCD resources
-* The mainboard (custom Marlin firmware)
-
-It is recommended to flash first the LCD resources.
+* The **LCD resources**
+* The **mainboard** (custom Marlin firmware)
 
 ## Part 1 - Flashing the LCD resources
 
-**Note**: *The LCD resources are hosted on their own GitHub project: [ADVi3pp-LCD](https://github.com/andrivet/ADVi3pp-LCD).*
+**IMPORTANT**: When you flash **ADVi3++** LCD for the first time, you will not see the new screens until you flash the Mainboard part.
 
 ### LCD Step 1 - Prepare a microSD card
 
-**IMPORTANT**: You have to use a microSD card with a maximum capacity of **8GiB**. If you use a microSD card with a greater capacity, the results are **unreliable** (sometimes it flashes, sometimes not). This is a limitation of the LCD display itself.
+**IMPORTANT**: You have to use a microSD card with a maximum capacity of **8GiB**. If you use a microSD card with a greater capacity, the results are **unreliable** (sometimes it flashes, sometimes not). This is a limitation of the LCD panel itself.
 
 You have two possibilities to flash:
 
@@ -70,7 +68,7 @@ If you prefer graphical applications, [Etcher](https://etcher.io) is a great mul
 - After around 2 or 3 minutes, no more images appear
 - Turn off the printer and remove the microSD card
 - Re-assemble the front panel, do not forget the two M3 screws on the top
-- Turn the printer on. You know have the new version of the LCD images
+- Turn the printer on. If you are flashing **ADVi3++** for the first time, the new screens will not appear until you flash the Mainboard part.
 
 ### LCD Enclosure
 
@@ -129,12 +127,21 @@ To flash the firmware:
 
 * When **OctoPrint** in rebooted and the UI reloaded, click on the wrench icon in the toolbar
 * Under **Plugins**, choose **Firmware Updater**
-* Click on the wrench icon, and after **Path to advdude**, enter `/usr/bin/avrdude` and click **Save**
+* Click on the wrench icon, and enter the following parameters:
+
+  * **Flash method**: avrdude
+  * **AVR MCU**: ATmega2560
+  * **Path to advdude**: `/usr/bin/avrdude`
+  * **AVR Programmer Type**: wiring
+  
+![](assets/firmware-updater-parameters.png)
+
+* Click **Save**
 * Be sure your USB port appears after **Serial Port**
 * After **... from file**, click on **Browse** and select the firmware you have downloaded such as `ADVi3pp-Mainboard-x.x.x.hex`
 * Click on **Flash from File**
 * The flashing process may take around 30 seconds
-* When it is finished, a message appears saying "Flashing successful". Click on **Save**
+* When it is finished, a message appears saying **Flashing successful**. Click on **Save**
 * Reconnect the printer
 
 ### Mainboard Option 3 - Flashing using Arduino IDE
@@ -188,3 +195,5 @@ or (Linux):
 ```
 avrdude -v -p m2560 -c wiring -P /dev/ttyUSB0 -U flash:w:ADVi3pp-Mainboard-2.0.0.hex:i -D
 ```
+
+

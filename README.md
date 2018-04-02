@@ -1,13 +1,14 @@
 # ADVi3++ User Manual
-Version 2.1 - January 12, 2018
+Version 3.0 - April 2, 2018
 
-![](assets/boot.gif)
+![](assets/Boot-and-Screens.gif)
 
 ## Table of content
 
 * Introduction
 * [How to Flash](How-to-Flash.md)
 * [LCD Touch Screen Manual](LCD-Touch-Screen-Manual.md)
+* [Tuning](Tuning.md)
 * [Default Configuration](Default-Configuration.md)
 * [Resources](Resources.md)
 
@@ -15,19 +16,26 @@ Version 2.1 - January 12, 2018
 
 **ADVi3++** is a custom firmware for **Wanaho** Duplicator i3+ printers (and their clones like the Monoprice Select Plus). It is based on the latest stable release of Marlin and adds some new specific features. It has the following features when compared to the stock Wanhao firmwares:
 
-* Based on Marlin 1.1.8 (Wanhao firmware is based on a fork of Marlin created in 2014)
-* New LCD screens in color (yes, your LCD display is able to show colors)
+* Based on **Marlin 1.1.8** (stock Wanhao firmwares are based on Marlin 1.1.4)
+* New redesigned LCD screens
 * Access on the LCD display to more printer parameters like Feedrate, Acceleration and Jerk settings
-* Calibration of the X, Y, and Z motors and of the extruder
+* Tuning of the X, Y, and Z motors and of the extruder
 * Temperature graphs
 * 3 preheat presets
 * 5 points manual bed leveling
+* BLTouch support with automatic bed leveling
 * Display of messages (M117 code) from external software such as OctoPrint (Detailed progress plugin for example)
 * An up to date User Manual
 
+## Compatibility
+
+Currently, **ADVi3++** is only compatible with Wanhao Duplicator i3 Plus version 1 printers and their clones. Version 2 (aka Wanhao Duplicator i3 Plus **Mark II**) will be supported in a future release.
+
+**ADVi3++** is not compatible with printers that do not have a similar LCD panel (DGUS DWIN), i.e. it is not compatible with previous versions of Duplicator i3, with i3 Mini, etc.
+
 ## Source Code
 
-The full source code of ADVi3++ is available in the following GitHub repositories:
+The full source code of **ADVi3++** is available in the following GitHub repositories:
 
 * [ADVi3pp-Marlin](https://github.com/andrivet/ADVi3pp-Marlin)
 * [ADVi3pp-LCD](https://github.com/andrivet/ADVi3pp-LCD)
@@ -39,11 +47,13 @@ I am not affiliated, associated, authorized, endorsed by, or in any way official
 
 **USE THIS CUSTOM FIRMWARE AT YOUR OWN RISK. I am not responsible for any damage done to your printer or LCD when using this firmware.**
 
+Be also aware that installing a third-party firmware like ADVi3++ will probably **void** your **warranty**.
+
 ## Copyrights
 
 **ADVi3++**
 
-* Copyright &copy; 2017-2018 Sebastien Andrivet [GitHub advi3pp-Marlin project](https://github.com/andrivet/advi3pp-Marlin])
+* Copyright &copy; 2017-2018 Sebastien Andrivet [GitHub ADVi3pp-Marlin project](https://github.com/andrivet/advi3pp-Marlin])
 * Copyright &copy; 2016-2018 [MarlinFirmware](https://github.com/MarlinFirmware/Marlin)
 * Based on Sprinter and grbl.
 * Copyright &copy; 2011 Camiel Gubbels / Erik van der Zalm
@@ -51,6 +61,14 @@ I am not affiliated, associated, authorized, endorsed by, or in any way official
 **ADVi3++ User Manual**
 
 * Copyright &copy; 2018 Sebastien Andrivet
+
+## Thanks
+
+Thanks to [Dylan xKoldx](https://github.com/xKoldx/ADVi3pp-Marlin) and [weidercs](https://github.com/weidercs/ADVi3pp-Marlin) for their forks supporting BLTouch. Thanks to Matt Cowell [SureshotM6](https://github.com/SureshotM6/ADVi3pp-Marlin) for the fork supporting M600 and head parking.
+
+Thanks you to Leo Lüker (Silverquark) for his [i3plus+ project](https://github.com/Silverquark/i3PlusPlus). I take many ideas from his code. But the project is no more active and I do not like the screens (personal taste) so I have created the ADVi3++ fork (technically, it is a fork of Marlin, not of i3plus+).
+
+Thanks to [MarlinTeam](http://marlinfw.org/) for their great work.
 
 ## Licenses
 

@@ -2,18 +2,17 @@
 
 ![Boot](assets/boot.gif)
 
-*Boot animation*
-
 ## Main panel
 
 ![Main](assets/022_main.png)
 
-* **Temperatures**: Displays the current temperature of the extruder and of the bed. Displays also the current speed of the extruder's fan. Tap on this area to show a graph of temperatures.
-* **Version**: Displays the version number of ADVi3++. Taps on this area to show an About panel with information about the release installed.
+* **Temperatures**: Displays the current temperature of the extruder (red) and of the bed (blue). Displays also the current speed of the extruder's fan (gray) and the z-height in mm (green). Tap on this area to show a graph of temperatures.
+* **Version**: Displays the version number of **ADVi3++**. Taps on this area to show an About panel with information about the release installed.
 * **Controls**: Taps on this button to display the **Controls** panel with tools such as Load and Unload Filament, Move, etc.
 * **Print**: Taps on this button to display the **Print** panel (if your are printing) or the Temperature graph (if you are not).
 * **Tuning**: Taps on this button to display the **Tuning** panel with tools to help you adjust some parameters of your printer.
 * **Settings**: Taps on this button to display the **Settings** panel. In this panel, you can view and modify several parameters of the printer.
+* **Info**: Taps on this button to display the **Information** panel with access to information such as **Statistics**, **Versions** and **Copyrights**.
 
 ## Controls
 
@@ -71,16 +70,23 @@ You have the choice of three presets (both bed and hot-end temperatures). You ca
 
 ## Print
 
-![Print](assets/044_print.png)
+![Print](assets/042_sd_print.png)
 
 The exact screen displayed is dependent of the context (in this order):
 
 * If you are printing from the SD card, the **SD Print** screen is displayed (see below).
 * If you are printing through USB (i.e. from Cura, OctoPrint, ...), the **USB Print** screen is displayed (see below).
 * If you are not printing and a SD card is inserted in the SD slot (and readable), the **SD Card** screen is displayed (see below).
-* Otherwise, the **Temperature Graphs** is displayed (see below).
+* Otherwise, the **Temperature Graphs** is displayed.
 
-## SD Card
+![](assets/086_temperature.png)
+
+* The extruder graph and temperature are in **red**
+* The bed graph and temperature and in **blue**
+* The fan speed in in **gray**
+* The z-axis position is in **green**
+
+### SD Card
 
 ![SD Card](assets/040_sd_card.png)
 
@@ -90,7 +96,7 @@ The **SD Card** screen is displayed only when a SD card is inserted in the SD sl
 
 * To print a file, press its name. The **SD Print** is displayed and the printing starts.
 
-## SD Print
+### SD Print
 
 ![SD Print](assets/042_sd_print.png)
 
@@ -103,7 +109,7 @@ The **SD Print** screen is displayed only when a print is running from the SD ca
 * **Print Settings**: Press on the gear button to display and modify the **Print Settings** like the temperature, the fan speed, etc.
 * **Back**: If you press the **Back** button, the printing continues and it goes back to the previous screen (**SD Card**).
 
-## Print Settings
+### Print Settings
 
 ![print Settings](assets/080_print_settings.png)
 
@@ -114,9 +120,9 @@ In this screen, you can adjust print parameters during a SD card printing:
 * **Hot-end**: Temperature of the hot-end.
 * **Bed**: Temperature of the bed.
 
-## USB Print
+### USB Print
 
-![USB Print](assets/044_print.png)
+![USB Print](assets/044_usb_print.png)
 
 The **USB Print** screen is displayed only when a print is running through the USB cable (i.e. from Cura, OctoPrint, etc)
 
@@ -127,31 +133,29 @@ The **USB Print** screen is displayed only when a print is running through the U
 * **Print Settings**: Press on the gear button to display and modify the **Print Settings** like the temperature, the fan speed, etc.
 * **Back**: If you press the **Back** button, the printing continues and it goes back to the previous screen.
 
-
 ## Tuning
 
-![](assets/026_calibration.png)
+![](assets/026_tuning.png)
 
 This panel gives you access to tools to help you adjust some parameters of your printer.
 
 **Important**: Some parameters are directly derived from the mechanical parts of the printer. Unless you change these parts (like the step motors), there is no need to change them.
 
-* **Level**: Tool to help you level your bed.
+* **Manual Level**: Tool to help you level your bed manually.
 * **Extruder**: Tool to help you adjust the number of steps per millimeter for the extruder motor.
 * **XYZ motors**: Tool to help you adjust the number of steps per millimeter for X and Y motors.
 * **PID tuning**: Tool to help you adjust the PID parameters ([proportional-integral-derivative control algorithm](http://reprap.org/wiki/PID_Tuning)).
+* **Sensor**: Tools related to your sensor (if you have one), such as measuring Z-height and automatic bed leveling.
 
-## Level
+### Manual Level
 
-This tool helps you level your bed.
+This tool helps you level your bed manually.
 
 * First, the head and bed return to their home position.
 
-![](assets/046_level_1.png)
-
 * Then, press one of the button with a number to go to each position:
 
-![](assets/048_level_2.png)
+![](assets/048_manual_leveling.png)
 
 * Adjust each thumb nut so a feeler gauge (0.1 mm) can move between the nozzle and the bed with just a tiny bit of friction:
 
@@ -172,7 +176,7 @@ This tool helps you level your bed.
 ![](assets/gauge2.png)
 [banggood.com](https://www.banggood.com/17pcs-Blade-Feeler-Gauge-Thickness-Gap-Metric-Measure-Tool-Set-0_02mm-to-1mm-p-1093020.html?rmmds=search&cur_warehouse=CN)
 
-## Extruder
+### Extruder
 
 This tool helps you adjust adjust the number of steps per millimeter for the extruder motor. There is no need to do this more than once, except if you change some mechanical parts.
 
@@ -206,9 +210,9 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 * Press the **Back** button the restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
 
-## XYZ motors
+### XYZ motors
 
-This tool helps you adjust adjust the number of steps per millimeter for the X, Y and Z motors. There is no need to do this more than once, except if you change some mechanical parts.
+This tool helps you to adjust the number of steps per millimeter for the X, Y and Z motors. There is no need to do this more than once, except if you change some mechanical parts.
 
 **Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the step motor, ...) Unless you change these parts (like the motors), there is no need to change this parameter. The default values are `81`, `81`, and `400.5`.*
 
@@ -239,7 +243,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the X, 
 
 *Measure Z*
 
-## PID tuning
+### PID tuning
 
 > PID tuning refers to the parameters adjustment of a proportional-integral-derivative control algorithm used in most repraps for hot ends and heated beds.
 
@@ -261,17 +265,62 @@ This tool helps you adjust adjust the number of steps per millimeter for the X, 
 
 * Press the **Back** button the restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
 
+### Sensor
+
+This panel gives you access to tools to control your sensor.
+
+**Note**: If you have flashed a version without sensor support, it will display instead a **No Sensor** panel.
+
+![](assets/100_sensor_tuning.png)
+
+* **Leveling**: This starts the automatic leveling process. It measures 9 points of the bed and takes some minutes. Once the measuring is finished, it displays the result:
+
+![](assets/102_sensor_grid.png)
+
+**IMPORTANT**: For an accurate leveling, you have to measure the **Z-height** first (see bellow)
+
+* Press the checkmark to accept these measures.
+
+* **Self-test**: Start the self-test of the probe. To stop the test, press **Reset**
+* **Reset**: Reset the sensor in case of an error (when the LED of the sensor is flashing)
+* **Deploy**: Deploy the push-pin
+* **Stow**: Slow the push-pin
+* **Z-height**: The sensor has no way to know the distance between itself and the nozzle. For X and Y offsets, it depends of the sensor's support and it does not have to be precise. But for the Z axis, it has to be very precise. This tool helps you measure the Z-height:
+  
+  * Taps on **Z-height**.
+  * The head with move to its home position (at the center of the bed)
+
+  ![](assets/106_z_height.png)
+  
+  * Adjust the bed's four thumb nuts so a feeler gauge can move between the nozzle and the bed with just a tiny bit of friction. Contrary to the Manual bed leveling, you just have to adjust this location.
+
+  * Press the **Continue** button and the probe will move at the center of the bed and measure the Z-height. Once it is done, the result is displayed:
+
+  ![](assets/094_sensor_settings.png)
+  
+  * You can adjust the Z offset (most of the time, there is no need to adjust the measured value)
+  * Tap on the checkmark to save this setting.
+
 ## Settings
 
 ![](assets/028_settings.png)
 
 * **Motors**: Displays several settings related to the step motors (see bellow).
 * **PID**: Displays the current PID settings.
-* **Statistics**: Displays printing statistics.
-* **Factory Reset**: Resets the various settings to their default values.
-* **About**: Displays information about the different software components.
+* **Firmware**: Change parameters controlled the firmware such as the thermal protection and the baud rate.
+* **Sensor**: Displays and let you adjust sensor's settings.
+* **LCD**: Change LCD parameters such as the dimming and the buzzer.
+* **Reset** (in the top-right corner): Resets all the parameters stored in EEPROM to their factory values.
 
-## Motors
+![](assets/066_factory_reset.png)
+
+* Before resetting all the settings to their default, you have to confirm it by pressing the **Checkmark** button.
+
+* If you do not want to reset the settings, press the **Back** button.
+
+* Once confirmed, all settings are reset to their default and saved in the EEPROM memory of the motherboard.
+
+### Motors
 
 ![](assets/062_motors_settings.png)
 
@@ -280,7 +329,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the X, 
 * **Acceleration**: Displays acceleration settings of the motors.
 * **Jerk**: Displays jerk settings of the motors.
 
-## Steps
+### Steps
 
 ![](assets/072_steps_settings.png)
 
@@ -294,7 +343,7 @@ This screen display the step settings of the motors.
 
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
 
-## Feedrate
+### Feedrate
 
 ![](assets/074_feedrate_settings.png)
 
@@ -308,7 +357,7 @@ This screen display the feedrate (speed) settings of the motors.
 
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
 
-## Acceleration
+### Acceleration
 
 ![](assets/076_acceleration_settings.png)
 
@@ -322,7 +371,7 @@ This screen display the acceleration settings of the motors.
 
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
 
-## Jerk
+### Jerk
 
 ![](assets/078_jerk_settings.png)
 
@@ -336,7 +385,7 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
  
-# PID
+### PID
 
 ![](assets/064_pid_settings.png)
 
@@ -354,7 +403,36 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
 
-## Statistics
+### Firmware
+
+![](assets/090_firmware.png)
+
+* **Thermal protection**: Can can disable or enable **Thermal protection**. Thermal protection is a feature of Marlin firmware that can detect anomalies such as a broken thermistor. In some cases, it can save your printer and even your house from fire. However, if you get several **Thermal Runaway Errors** and you are sure your printer is OK, you can disable here the protection. **AT YOUR OWN RISK**.
+* **USB baudrate**: By default, the firmware uses `115200` bps to communicate with your computer. You can adjust the baud rate here. I have had good results with `250000` bps and OctoPrint.
+
+### Sensor
+
+![](assets/094_sensor_settings.png)
+
+  * You can adjust the **Z offset** here. This offset is the difference between the nozzle and the trigger point of the sensor in mmm.
+  * Tap on the **Checkmark** button to save this setting.
+
+### LCD
+
+![](assets/096_LCD.png)
+
+* **Screen dimming**: By default, the LCD displays lower its brightness after one minute. Here, you can disable or enable this dimming.
+* **Brightness**: Adjust the brightness of the LCD display.
+* **Buzzer**: Enable or disable the buzzer for commands such as M600
+* **Buzz on press**: Enable or disable the buzzer when you tap on the LCD panel
+
+## Info
+
+![](assets/088_info.png)
+
+* Displays information about the past prints, the versions of the different components and the cppyrights.
+
+### Statistics
 
 ![](assets/068_statistics.png)
 
@@ -366,20 +444,9 @@ This screen display various statistics:
 * **Longest print time**: The longest print.
 * **Total filament extruded**: The total number of meters of filament extruded.
 
-## Factory Reset
+### Versions
 
-![](assets/066_factory_reset.png)
-
-* Before resetting all the settings to their default, you have to confirm it by pressing the **Checkmark* button.
-
-* If you do not want to reset the settings, press the **Back** button.
-
-Once confirmed, all settings are reset to their default and save in the EEPROM memory of the motherboard.
-
-
-## About
-
-![](assets/070_about.png)
+![](assets/070_versions.png)
 
 This screen display the version of several software components:
 
@@ -388,13 +455,10 @@ This screen display the version of several software components:
 * **LCD firmware**: The version of the (internal) LCD touch screen display.
 * **Marlin**: The version of the [Marlin](http://marlinfw.org) sources used by **ADVi3++**.
 
-## Temperature graph
+### Copyrights
 
-![](assets/086_temperature.png)
+![](assets/098_copyrights.png)
 
-This screen displays a graph of the temperatures (bed in blue, hot-end in red).
-
-* Press the **Back** button to go back to the previous screen.
-
+* Copyrights and licences. Both **Marlin** and **ADVi3++** are released under [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 
