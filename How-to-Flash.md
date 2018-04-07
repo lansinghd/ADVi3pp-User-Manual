@@ -19,21 +19,24 @@ You have two possibilities to flash:
 
 * Download the LCD resources: [ADVi3pp-LCD-x.x.x.zip](https://github.com/andrivet/ADVi3pp-Marlin/releases)
 * Unzip the file somewhere
-* Copy manually all the files and folders in the uncompressed zip file to the root of a microSD card. The microSD card **has** to be formatted with the following parameters: FAT32, 4096 bytes per cluster (i.e. 8 sectors).
+* Manually copy all the files and folders from the uncompressed zip file to the root of a microSD card. The microSD card **must** be formatted with the following parameters: 
+    * FAT32
+    * 4096 bytes per cluster (i.e. 8 sectors).
 * To format under Linux (and macOS with the `dosfstools` Homebrew package):
 
 ```
 mkfs.fat -F 32 -n SD -s 8 -v /dev/disk2
 ```
 
-Of course, replace `/dev/disk2` with the right value.
+**Note:** *Be sure to replace `/dev/disk2` with the correct value.*
 
 * To format under Windows (Command Prompt):
 
 ```
 format G: /FS:FAT32 /V:LCD /A:4096
 ```
-Of course, replace `G:` with the right volume letter.
+
+**Note:** *Be sure to replace `G` with the correct volume letter.*
 
 #### LCD Step 1 - Option 2 - SD image
 
@@ -45,14 +48,14 @@ unzip ADVi3pp-LCD-1.0.0.img.zip
 sudo dd if=ADVi3pp-LCD-1.0.0.img of=/dev/disk2 bs=64K
 ```
 
-Of course, replace `/dev/disk2` with the right value.
+**Note:** *Be sure to replace `/dev/disk2` with the correct value.*
 
 If you prefer graphical applications, [Etcher](https://etcher.io) is a great multi-platform tool.
 
 ### LCD Step 2 - Install the new version
 
 - Disconnect the printer from power
-- Remove the two screws located on the front and loose the two M3 screws on the top
+- Remove the two screws located on the front and loosen the two M3 grub screws on top of the linear rod holders
 
 ![front-panel-screws](https://user-images.githubusercontent.com/981049/31637200-e3ecc438-b2cd-11e7-888f-aad32bc96676.jpg)
 
@@ -63,11 +66,11 @@ If you prefer graphical applications, [Etcher](https://etcher.io) is a great mul
 
 ![lcd-board-microsd](https://user-images.githubusercontent.com/981049/31637212-f5511148-b2cd-11e7-958a-9f496205c498.jpg)
 
-- Turn on the printer (either by connecting it to power or by connecting the USB slot to the computer)
-- The screen turns blue and then every image will appear one by one
-- After around 2 or 3 minutes, no more images appear
+- urn on the printer; either by connecting it to power or by connecting the USB slot to the computer
+- The screen will turn blue, then every image will appear one by one
+- After about 2 or 3 minutes, no more images will appear
 - Turn off the printer and remove the microSD card
-- Re-assemble the front panel, do not forget the two M3 screws on the top
+- Re-assemble the front panel, do not forget the two M3 grub screws on top of the linear rod holders
 - Turn the printer on. If you are flashing **ADVi3++** for the first time, the new screens will not appear until you flash the Mainboard part.
 
 ### LCD Enclosure
@@ -94,7 +97,9 @@ Then choose the option you are the most comfortable with.
 
 ### Mainboard Option 1 - Flashing using Cura
 
-* if net yet done, download Cura. I recommend either [Cura for Wanhao](http://www.wanhao3dprinter.com/Down/ShowArticle.asp?ArticleID=56) (if you directly connect the printer to your computer with a USB cable) or [Ultimaker Cura 3](https://ultimaker.com/en/products/ultimaker-cura) (if, for example, you are using OctoPrint to print)
+* if net yet done, download Cura. I recommend either:
+    * [Cura for Wanhao](http://www.wanhao3dprinter.com/Down/ShowArticle.asp?ArticleID=56) if you directly connect the printer to your computer with a USB cable
+    * [Ultimaker Cura 3](https://ultimaker.com/en/products/ultimaker-cura) if, for example, you are using OctoPrint to print
 * Start **Cura**
 * In the top menu, under **Settings** &#8594; **Printer**, select **Manage Printers**
 * Select your printer or **Add** your printer if it is not already done
@@ -103,7 +108,7 @@ Then choose the option you are the most comfortable with.
 
 ### Mainboard Option 2 - Flashing using OctoPrint
 
-You need `advdude` and the development build of the **Firmware Updater** plugin.
+You need `advdude` and the **Firmware Updater** plugin.
 
 To install `advdude` on a Raspberry Pi:
 
@@ -113,12 +118,13 @@ To install `advdude` on a Raspberry Pi:
 sudo apt update; sudo apt install avrdude
 ```
 
-To install the development build of the **Firmware Updater** plugin
+To install the **Firmware Updater** plugin
 
 * Open a navigator and connect to **OctoPrint**
 * **Login** and click on the wrench icon in the toolbar
 * Select **Plugin Manager** &#8594; **Get More...**
-* Under **from URL** enter `https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/devel.zip` and click on **Install**
+* In the **Search** box, enter **Updater**
+* Click on **Install** in front of **Firmware Updater** 
 * Restart **OctoPrint**
 
 To flash the firmware:

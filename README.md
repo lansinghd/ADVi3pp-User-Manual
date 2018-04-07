@@ -8,6 +8,7 @@ Version 3.0 - April 2, 2018
 * Introduction
 * [How to Flash](How-to-Flash.md)
 * [LCD Touch Screen Manual](LCD-Touch-Screen-Manual.md)
+* [BLTouch Sensor](BLTouch.md)
 * [Tuning](Tuning.md)
 * [Default Configuration](Default-Configuration.md)
 * [Resources](Resources.md)
@@ -19,7 +20,7 @@ Version 3.0 - April 2, 2018
 * Based on **Marlin 1.1.8** (stock Wanhao firmwares are based on Marlin 1.1.4)
 * New redesigned LCD screens
 * Access on the LCD display to more printer parameters like Feedrate, Acceleration and Jerk settings
-* Tuning of the X, Y, and Z motors and of the extruder
+* Tuning of the X, Y, and Z motors as well as the extruder motor
 * Temperature graphs
 * 3 preheat presets
 * 5 points manual bed leveling
@@ -29,9 +30,9 @@ Version 3.0 - April 2, 2018
 
 ## Compatibility
 
-Currently, **ADVi3++** is only compatible with Wanhao Duplicator i3 Plus version 1 printers and their clones. Version 2 (aka Wanhao Duplicator i3 Plus **Mark II**) will be supported in a future release.
+Currently, **ADVi3++** is only compatible with the Wanhao Duplicator i3 Plus version 1 printer and its clones. Version 2 (aka Wanhao Duplicator i3 Plus **Mark II**) will be supported in a future release.
 
-**ADVi3++** is not compatible with printers that do not have a similar LCD panel (DGUS DWIN), i.e. it is not compatible with previous versions of Duplicator i3, with i3 Mini, etc.
+**ADVi3++** is not compatible with printers that do not have a similar LCD panel (DGUS DWIN), i.e. it is not compatible with previous versions of Duplicator i3, i3 Mini, etc.
 
 ## Source Code
 

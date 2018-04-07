@@ -77,7 +77,7 @@ The exact screen displayed is dependent of the context (in this order):
 * If you are printing from the SD card, the **SD Print** screen is displayed (see below).
 * If you are printing through USB (i.e. from Cura, OctoPrint, ...), the **USB Print** screen is displayed (see below).
 * If you are not printing and a SD card is inserted in the SD slot (and readable), the **SD Card** screen is displayed (see below).
-* Otherwise, the **Temperature Graphs** is displayed.
+* Otherwise, the **Temperature Graph** is displayed.
 
 ![](assets/086_temperature.png)
 
@@ -139,7 +139,7 @@ The **USB Print** screen is displayed only when a print is running through the U
 
 This panel gives you access to tools to help you adjust some parameters of your printer.
 
-**Important**: Some parameters are directly derived from the mechanical parts of the printer. Unless you change these parts (like the step motors), there is no need to change them.
+**Important**: Some parameters are directly derived from the mechanical parts of the printer. Unless you change these parts (like the stepper motors), there is no need to change them.
 
 * **Manual Level**: Tool to help you level your bed manually.
 * **Extruder**: Tool to help you adjust the number of steps per millimeter for the extruder motor.
@@ -180,7 +180,7 @@ This tool helps you level your bed manually.
 
 This tool helps you adjust adjust the number of steps per millimeter for the extruder motor. There is no need to do this more than once, except if you change some mechanical parts.
 
-**Important**: *This parameter (number of steps per millimeter) is directly derived from the mechanical parts of the printer (the step motor, the gear, ...) Unless you change these parts (like the gear), there is no need to change this parameter. Its default value is `400.5`.*
+**Important**: *This parameter (number of steps per millimeter) is directly derived from the mechanical parts of the printer (the stepper motor, the gear, ...) Unless you change these parts (like the gear), there is no need to change this parameter. Its default value is `400.5`.*
 
 ![](assets/050_extruder_1.png)
 
@@ -214,7 +214,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 This tool helps you to adjust the number of steps per millimeter for the X, Y and Z motors. There is no need to do this more than once, except if you change some mechanical parts.
 
-**Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the step motor, ...) Unless you change these parts (like the motors), there is no need to change this parameter. The default values are `81`, `81`, and `400.5`.*
+**Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the stepper motor, ...) Unless you change these parts (like the motors), there is no need to change this parameter. The default values are `81`, `81`, and `400.5`.*
 
 * Print a cube 20x20x20 mm  and enter it actual dimensions (make more than one measure for each side and take the average):
 
@@ -305,7 +305,7 @@ This panel gives you access to tools to control your sensor.
 
 ![](assets/028_settings.png)
 
-* **Motors**: Displays several settings related to the step motors (see bellow).
+* **Motors**: Displays several settings related to the stepper motors (see bellow).
 * **PID**: Displays the current PID settings.
 * **Firmware**: Change parameters controlled the firmware such as the thermal protection and the baud rate.
 * **Sensor**: Displays and let you adjust sensor's settings.
