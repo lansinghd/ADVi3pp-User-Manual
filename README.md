@@ -1,5 +1,5 @@
 # ADVi3++ User Manual
-Version 3.0 - April 2, 2018
+Version 3.0 - May 25, 2018
 
 ![](assets/Boot-and-Screens.gif)
 
@@ -11,6 +11,7 @@ Version 3.0 - April 2, 2018
 * [BLTouch Sensor](BLTouch.md)
 * [Tuning](Tuning.md)
 * [Default Configuration](Default-Configuration.md)
+* [Building from the Source](Building.md)
 * [Resources](Resources.md)
 
 # Introduction
@@ -26,6 +27,7 @@ Version 3.0 - April 2, 2018
 * 5 points manual bed leveling
 * BLTouch support with automatic bed leveling
 * Display of messages (M117 code) from external software such as OctoPrint (Detailed progress plugin for example)
+* Advanced Pause (M600 support)
 * An up to date User Manual
 
 ## Compatibility
@@ -48,7 +50,7 @@ I am not affiliated, associated, authorized, endorsed by, or in any way official
 
 **USE THIS CUSTOM FIRMWARE AT YOUR OWN RISK. I am not responsible for any damage done to your printer or LCD when using this firmware.**
 
-Be also aware that installing a third-party firmware like ADVi3++ will probably **void** your **warranty**.
+Be also aware that installing a third-party firmware like **ADVi3++** will probably **void** your **warranty** depending of your country.
 
 ## Copyrights
 
@@ -67,7 +69,7 @@ Be also aware that installing a third-party firmware like ADVi3++ will probably 
 
 Thanks to [Dylan xKoldx](https://github.com/xKoldx/ADVi3pp-Marlin) and [weidercs](https://github.com/weidercs/ADVi3pp-Marlin) for their forks supporting BLTouch. Thanks to Matt Cowell [SureshotM6](https://github.com/SureshotM6/ADVi3pp-Marlin) for the fork supporting M600 and head parking.
 
-Thanks you to Leo Lüker (Silverquark) for his [i3plus+ project](https://github.com/Silverquark/i3PlusPlus). I take many ideas from his code. But the project is no more active and I do not like the screens (personal taste) so I have created the ADVi3++ fork (technically, it is a fork of Marlin, not of i3plus+).
+Thanks you to Leo Lüker (Silverquark) for his [i3plus+ project](https://github.com/Silverquark/i3PlusPlus). I take many ideas from his code. But the project is no more active and I do not like the screens (personal taste) so I have created the **ADVi3++** fork. It is technically a fork of Marlin, not of i3plus+.
 
 Thanks to [MarlinTeam](http://marlinfw.org/) for their great work.
 

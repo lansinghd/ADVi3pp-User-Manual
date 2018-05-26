@@ -1,11 +1,13 @@
 # Resources
 
 * [ADVi3++ Source Code](https://github.com/andrivet/ADVi3pp-Marlin)
+* [ADVi3++ Patreon Project](http://www.patreon/andrivet)
 * [ADVi3++ Facebook Page](http://facebook.com/advi3pp/)
 * [Marlin - Open Source 3D Printer Firmware](http://marlinfw.org)
 * [RepRap, humanity's first general-purpose self-replicating manufacturing machine.](RepRap.org)
 * [Duplicator i3 Plus Facebook Group](https://www.facebook.com/groups/i3plus/)
 * [PrusaPrinters Calculator](https://www.prusaprinters.org/calculator/)
+* [ANTCLABS web site](https://www.antclabs.com)
 
 **Note:** *In the past, it was possible to download the following resources directory from the [dwin.com.cn](http://dwin.com.cn) website. That is no more the case so I have copied them into the __ADVi3++__ repository.*
 

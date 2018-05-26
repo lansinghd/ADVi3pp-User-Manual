@@ -5,13 +5,15 @@ There are two parts to flash:
 * The **LCD resources**
 * The **mainboard** (custom Marlin firmware)
 
+**IMPORTANT**: Do not mix different versions. Both the LCD and the mainboard must have the exact same version.
+
 ## Part 1 - Flashing the LCD resources
 
 **IMPORTANT**: When you flash **ADVi3++** LCD for the first time, you will not see the new screens until you flash the Mainboard part.
 
 ### LCD Step 1 - Prepare a microSD card
 
-**IMPORTANT**: You have to use a microSD card with a maximum capacity of **8GiB**. If you use a microSD card with a greater capacity, the results are **unreliable** (sometimes it flashes, sometimes not). This is a limitation of the LCD panel itself.
+**IMPORTANT**: You **have to** use a microSD card with a maximum capacity of **8GiB**. If you use a microSD card with a greater capacity, the results are **unreliable** (sometimes it flashes, sometimes not, who knowns what may happend). This is a limitation of the LCD panel itself.
 
 You have two possibilities to flash:
 
@@ -66,24 +68,32 @@ If you prefer graphical applications, [Etcher](https://etcher.io) is a great mul
 
 ![lcd-board-microsd](https://user-images.githubusercontent.com/981049/31637212-f5511148-b2cd-11e7-958a-9f496205c498.jpg)
 
-- urn on the printer; either by connecting it to power or by connecting the USB slot to the computer
-- The screen will turn blue, then every image will appear one by one
+**Note**: You're LCD panel board may look slightly different as Wanhao uses different models depending on the phase of the moon.
+
+- Turn on the printer; either by connecting it to power or by connecting the USB slot to the computer
+- The screen will turn blue for a while, then every image will appear one by one
 - After about 2 or 3 minutes, no more images will appear
 - Turn off the printer and remove the microSD card
-- Re-assemble the front panel, do not forget the two M3 grub screws on top of the linear rod holders
-- Turn the printer on. If you are flashing **ADVi3++** for the first time, the new screens will not appear until you flash the Mainboard part.
+- Re-assemble the front panel. Do not forget the two M3 grub screws on top of the linear rod holders
+- Turn the printer on. If you are flashing **ADVi3++** for the first time, the new screens will not appear until you flash the Mainboard part
 
-### LCD Enclosure
+### LCD Enclosures
 
 ![](https://cdn.thingiverse.com/renders/08/b4/6b/6a/29/3e776fd38ccd98efaf288bf79aeab604_preview_featured.jpg)
 
-From [Thingiverse "Wanhao Duplicator I3 Plus LCD enclosure" by bosbessenbasje](https://www.thingiverse.com/thing:2369322):
+Available on [Thingiverse "Wanhao Duplicator I3 Plus LCD enclosure" by bosbessenbasje](https://www.thingiverse.com/thing:2369322):
 
 >  The standard enclosure puts the LCD in a 90 degrees angle towards the table and that makes it hard to read. This enclosure will put the LCD in 60 degrees angle which improves readability at the cost of a slightly large space on the table.
 
 > Note that the new enclosure allows you to insert a **micro SD in the LCD to upgrade the LCD firmware** if you want to. You will probably need some pliers to do it though.
 
-I highly recommend this LCD enclosure. It will simplify a lot your life.
+Another great enclosure is the following:
+
+![](https://cdn.thingiverse.com/renders/8d/ef/67/75/80/06d25c2f54ae351763ec1d534120108b_preview_featured.jpg)
+
+also available from [Thingiverse "LCD Holder with Micro SD card tray" from April1](https://www.thingiverse.com/thing:2882653).
+
+I highly recommend these LCD enclosures. They simplify future flashing.
 
 ## Part 2 - Flashing the mainboard firmware
 
@@ -201,5 +211,33 @@ or (Linux):
 ```
 avrdude -v -p m2560 -c wiring -P /dev/ttyUSB0 -U flash:w:ADVi3pp-Mainboard-2.0.0.hex:i -D
 ```
+
+# Troubleshooting
+
+### The LCD part does not flash properly
+
+Be sure to use a 8 GiB microSD and not with a higher capacity. The LCD panel is not able to read reliably high capacity cards. 
+
+### The LCD panel behave strangely: When you press somewhere, it activates an element at a different place
+
+You probably enter calibration mode. There are two ways to solve this:
+
+* Press the screen very rapidly 20 times
+* Create a `CONFIG.TXT` file in the root of a microSD card with the following content:
+
+### After reassembly, the LCD displays nothing
+
+Be sure the flat cable between the LCD and the mainboard is properly inserted in its connectors. This cable and the connectors are very fragile. 
+
+The cable is a standard flat flexible (FFC) jumper cable, 1.0 mm pitch, 10 way. You can buy some from a local reseller. For example from [RS-Online, manufactured by Wurth Elektronik](https://uk.rs-online.com/web/p/ffc-fpc-jumper-cables/7635697/).
+
+### When trying to flash the motherboard, the computer does not see the printer
+
+The most common reasons are the following:
+
+* **Wrong baudrate**. Your computer may have selected a wrong baudrate such as 9600. The default baudrate for this printer is 115200
+* **Missing USB driver**. Most of the time, the operating system installs the right USB driver for the printer. But sometimes, the installation fails. The i3 Plus printer uses a cheap USB-to-Serial bridge WCH CH340G. The driver can be downloaded from the [web site of the manufacturer (in Chinese)](http://www.wch.cn/download/CH340DS1_PDF.html). The file to download is [CH341SER.EXE](http://www.wch.cn/downloads/file/65.html) for Windows and [CH341SER_MAC.ZIP](http://www.wch.cn/downloads/CH341SER_MAC_ZIP.html) for macOS.
+* **Bad USB cable**. Try to use another, shorter, USB cable
+
 
 
