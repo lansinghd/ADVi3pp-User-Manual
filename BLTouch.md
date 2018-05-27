@@ -192,7 +192,6 @@ Here is an example of starting G-Code:
 G21                                             ; Set metric values
 G90                                             ; Set absolute positioning
 M82                                             ; Set extruder to absolute mode
-M107                                            ; Start with the fan off
 G28 X0 Y0                                       ; Move X/Y to min endstops
 G28 Z0                                          ; Move Z to min endstops
 G1 Z20                                          ; Raise the head
