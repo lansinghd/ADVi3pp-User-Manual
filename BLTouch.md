@@ -182,7 +182,7 @@ The following G-Codes are involved in automatic bed leveling:
 |--------|------|-------|
 | `G28`  | Auto Home | Auto-home one or more axes. It also **disabled** bed leveling compensation. To reenable it, use `M420 S1`. |
 | `G29`  | Automatic Bed Leveling | ABL probes the bed at 3 or more points and enables bed leveling compensation. It is required to auto home (`G28`) before. |
-| `G420` | Bed Leveling State | Get and/or set the enabled state of bed leveling compensation. For example, `G420 S1` enables it. |
+| `M420` | Bed Leveling State | Get and/or set the enabled state of bed leveling compensation. For example, `M420 S1` enables it. |
 
 ## Starting G-Code
 
@@ -208,7 +208,7 @@ G92 E0                                          ; zero the extruded length
 **IMPORTANT**: If your code includes a `G28` after `G29`, this will disable z-height compensation. So you have to re-enabled it with:
 
 ```
-G420 S1
+M420 S1
 ```
 
 
