@@ -124,7 +124,7 @@ Even if it is often the solution chosen by people, **I recommend to avoid it** f
 However, if you still want to use Arduino IDE, here are the steps:
 
 * Open Arduino IDE (1.8.5 or higher)
-* Select **File** | **Open** and browse to `Marlin.ino` inside the `Marlin` subfolder
+* Select **File** / **Open** and browse to `Marlin.ino` inside the `Marlin` subfolder
 * Select the right board under **Tools**:
   - **Board**: Arduino/Genuino Mega or Mega2560
   - **Processor**: ATmega2560 (Mega 2560)
