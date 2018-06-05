@@ -136,6 +136,17 @@ However, if you still want to use Arduino IDE, here are the steps:
 
 * Usually, you use the first file (`Marlin.ino.mega.hex`)
 
+### Build a BLTouch release with Arduino IDE
+
+By default, **ADVI3++** build a non-BLTouch release (i.e. a release for the stock printer). If you want to build a BLTouch release, I highly encourage you to use **PlatformIO** or **PlatformIO IDE**. However, I have recently modified the sources to ease the build with Arduino IDE:
+
+* Download the latest sources: https://github.com/andrivet/ADVi3pp-Marlin/archive/advi3++.zip
+* Open the file `advi3pp_defines.h`
+* Uncomment the line with `#define ADVi3PP_BLTOUCH` (i.e. remove the two `//` and the space.
+* Compile as explain above
+
+**Note**: The current latest release (3.0.1) does not include these changes (i.e. the file `advi3pp_defines.h`) so be sure to use the link above.
+
 ## PlatformIO Core
 
 **TO WRITE**
