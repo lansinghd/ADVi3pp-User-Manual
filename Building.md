@@ -140,16 +140,52 @@ However, if you still want to use Arduino IDE, here are the steps:
 
 By default, **ADVI3++** build a non-BLTouch release (i.e. a release for the stock printer). If you want to build a BLTouch release, I highly encourage you to use **PlatformIO** or **PlatformIO IDE**. However, I have recently modified the sources to ease the build with Arduino IDE:
 
-* Download the latest sources: https://github.com/andrivet/ADVi3pp-Marlin/archive/advi3++.zip
 * Open the file `advi3pp_defines.h`
-* Uncomment the line with `#define ADVi3PP_BLTOUCH` (i.e. remove the two `//` and the space.
+* Uncomment the line with `#define ADVi3PP_BLTOUCH` (i.e. remove the two `//` and the space).
 * Compile as explain above
-
-**Note**: The current latest release (3.0.1) does not include these changes (i.e. the file `advi3pp_defines.h`) so be sure to use the link above.
 
 ## PlatformIO Core
 
-**TO WRITE**
+PlatformIO is an open source ecosystem for IoT development, in particular Arduino development. PlatformIO Core is a heart of whole PlatformIO ecosystem. This a Command Line Tool that consists of multi-platform build system, platform and library managers and other integration components.
+
+### Installation
+
+The installation depends of your operating system. Please follow the [official instructions to install PlatformIO Core](http://docs.platformio.org/en/latest/installation.html).
+
+### Building
+
+Enter the following command to build the firmware (both with and without BLTouch support):
+
+```
+platformio run
+```
+
+The project is build and you see something similar to this:
+
+```
+[...]
+AVR Memory Usage
+----------------
+Device: atmega2560
+
+Program:  153632 bytes (58.6% Full)
+(.text + .data + .bootloader)
+
+Data:       5417 bytes (66.1% Full)
+(.data + .bss + .noinit)
 
 
+========================================================================= [SUCCESS] Took 7.30 seconds =========================================================================
+
+================================================================================== [SUMMARY] ==================================================================================
+Environment i3plus                      [SUCCESS]
+Environment i3plus-bltouch              [SUCCESS]
+Environment i3plus-debug                [SKIP]
+Environment i3plus-bltouch-debug        [SKIP]
+========================================================================= [SUCCESS] Took 14.11 seconds =========================================================================
+```
+
+As you can see, by default, it builds the `i3plus` and `i3plus-bltouch` targets, i.e. the release version for the stock i3 Plus printer and the release version for the printer with a BLTouch sensor.
+
+Firmwares are built into the hidden `.pioenvs` folder in sub-folders with the names of the targets. The name of the firmware is always `firmware.elf` (binary executable) and `firmware.hex` (hexadecimal text form).
 
