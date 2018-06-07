@@ -1,9 +1,10 @@
 ---
-title: "ADVi3++ User Manual - version 3.0"
+title: "ADVi3++ User Manual"
 author: [Sebastien Andrivet]
-date: 2018-05-25
+date: 2018-06-07
+version: 3.0.2
 titlepage: true
-titlepage-color: "424242"
-titlepage-text-color: "FFFFFF"
-titlepage-rule-color: "FFFFFF"
+titlepage-text-color: "ffffff"
+titlepage-rule-color: "ff9300"
+background: "background.png"
 ...

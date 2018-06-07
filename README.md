@@ -1,18 +1,18 @@
+
 # ADVi3++ User Manual
-Version 3.0.2 - June 6, 2018
 
 ![](assets/Boot-and-Screens.gif)
 
 ## Table of content
 
 * Introduction
-* [How to Flash](How-to-Flash.md)
-* [LCD Touch Screen Manual](LCD-Touch-Screen-Manual.md)
-* [BLTouch Sensor](BLTouch.md)
-* [Tuning](Tuning.md)
-* [Default Configuration](Default-Configuration.md)
-* [Building from the Source](Building.md)
-* [Resources](Resources.md)
+* [How to Flash](01-How-to-Flash.md)
+* [LCD Touch Screen Manual](02-LCD-Touch-Screen-Manual.md)
+* [BLTouch Sensor](03-BLTouch.md)
+* [Tuning](04-Tuning.md)
+* [Building from the Source](05-Building.md)
+* [Default Configuration](06-Default-Configuration.md)
+* [Resources](07-Resources.md)
 
 # Introduction
 
