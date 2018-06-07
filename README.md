@@ -1,5 +1,5 @@
 # ADVi3++ User Manual
-Version 3.0 - May 25, 2018
+Version 3.0.2 - June 6, 2018
 
 ![](assets/Boot-and-Screens.gif)
 
