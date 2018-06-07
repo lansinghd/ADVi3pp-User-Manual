@@ -2,13 +2,13 @@
 
 The default parameters of this firmware are the following:
 
-| Settings | **Default values** |
-|:--- |:--- |
+| Settings | Default values | Remark |
+|:--- |:--- |:--- |
 | **Step Settings** |  |
-| X | 81 |
-| Y | 81 |
-| Z | 400.5 |
-| E | 94.30 |
+| X | 80   | was 81 before 3.0.2 |
+| Y | 80   | was 81 before 3.0.2 |
+| Z | 400  | was 400.5 before 3.0.2 |
+| E | 93.0 | was 94.30 before 3.0.2 |
 | **PID Settings** | |
 | P | 33.41 |
 | I | 1.47 |
