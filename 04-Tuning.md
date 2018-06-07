@@ -12,11 +12,11 @@ The maths are the following:
 
 #### E axis
 
-- The motors moves `1.8°` per steps
+- The motors moves `1.8`&deg; per steps
 - So a revolution has `360 / 1.8  = 200` steps
 - The driver gives `16` micro-steps
 - Let's assume the gear has a diameter of `10.95` mm
-- So we have: `(200 * 16) / (10.95 *` &pi;`) = 93` steps / mm.
+- So we have: `(200 * 16) / (10.95 *`&pi;`) = 93` steps / mm.
 
 
 ### PID Tuning
@@ -37,7 +37,7 @@ The maths are the following:
 
 #### X and Y axis
 
-- The motors moves `1.8°` per steps
+- The motors moves `1.8`&deg; per steps
 - So a revolution has `360 / 1.8  = 200` steps
 - The driver gives `16` micro-steps
 - On X and Y axis, the toothed pulleys have `20` teeths
@@ -46,7 +46,7 @@ The maths are the following:
 
 #### Z axis
 
-- The motors moves `1.8°` per steps
+- The motors moves `1.8`&deg; per steps
 - The lead screw is `8` mm per revolution
 - So we have: `(200 * 16) / 8 = 400` steps / mm
 

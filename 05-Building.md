@@ -23,7 +23,7 @@ The following chapters describe each solution.
 
 ## Download ADVi3++ Sources
 
-![](https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png)
+![](https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-64.png)
 
 The first step is to obtain the sources. They are hosted on GitHub. You have several way to do that:
 
@@ -75,14 +75,14 @@ Data:       5417 bytes (66.1% Full)
 (.data + .bss + .noinit)
 
 
-========================================================================= [SUCCESS] Took 7.30 seconds =========================================================================
+================= [SUCCESS] Took 7.30 seconds =================
 
-================================================================================== [SUMMARY] ==================================================================================
+========================== [SUMMARY] ==========================
 Environment i3plus                      [SUCCESS]
 Environment i3plus-bltouch              [SUCCESS]
 Environment i3plus-debug                [SKIP]
 Environment i3plus-bltouch-debug        [SKIP]
-========================================================================= [SUCCESS] Took 14.11 seconds =========================================================================
+================= [SUCCESS] Took 14.11 seconds =================
 ```
 
 * As you can see, by default, it builds the `i3plus` and `i3plus-bltouch` targets, i.e. the release version for the stock i3 Plus printer and the release version for the printer with a BLTouch sensor.
@@ -106,7 +106,25 @@ Environment i3plus-bltouch-debug        [SKIP]
 
 ## Atmel Studio 7
 
-**TO WRITE**
+[Atmel Studio 7](http://www.microchip.com/mplab/avr-support/atmel-studio-7) is a free, integrated development platform for developing and debugging all AVR&reg; and SAM microcontroller applications.
+
+As far as I know, using Atmel Studio is the only way to use **hardware debuggers** such as [AVR Dragon](https://www.microchip.com/DevelopmentTools/ProductDetails/ATAVRDRAGON) or [Atmel-ICE](http://www.microchip.com/developmenttools/ProductDetails/atatmel-ice).
+
+As Atmel Studio is not specific to Arduino development, it does not include Arduino Core library by default. You have to add it manually into **ADVi3++** project:
+
+* Start Atmel Studio
+* Under **Start** menu, choose **New Example Project**
+* For **Device Family**, choose **Atmega**
+* For **Categpry**, choose **Application**
+* Click on the left of **Atmel - Atmel Corp** to see the different projects
+* Choose **megaAVR GPIO example - STK600 - ATmega2560**
+* Change parameters such as **Location** if you want. It is not important as we will not keep this project.
+* Click **OK**
+
+* Choose **Open Project...**
+* Navigate to the root of the ADVi3pp-Marlin project. This directory contains a file named **ADVi3pp-Marlin.atsln**. Choose it and click **Open**
+* Select **AtmelStudio Solution**
+
 
 ## Arduino IDE
 
@@ -175,17 +193,19 @@ Data:       5417 bytes (66.1% Full)
 (.data + .bss + .noinit)
 
 
-========================================================================= [SUCCESS] Took 7.30 seconds =========================================================================
+================= [SUCCESS] Took 7.30 seconds =================
 
-================================================================================== [SUMMARY] ==================================================================================
+========================== [SUMMARY] ==========================
 Environment i3plus                      [SUCCESS]
 Environment i3plus-bltouch              [SUCCESS]
 Environment i3plus-debug                [SKIP]
 Environment i3plus-bltouch-debug        [SKIP]
-========================================================================= [SUCCESS] Took 14.11 seconds =========================================================================
+================= [SUCCESS] Took 14.11 seconds =================
 ```
 
 As you can see, by default, it builds the `i3plus` and `i3plus-bltouch` targets, i.e. the release version for the stock i3 Plus printer and the release version for the printer with a BLTouch sensor.
 
 Firmwares are built into the hidden `.pioenvs` folder in sub-folders with the names of the targets. The name of the firmware is always `firmware.elf` (binary executable) and `firmware.hex` (hexadecimal text form).
+
+
 

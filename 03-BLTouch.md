@@ -40,7 +40,8 @@ Be sure to buy your BLTouch from an approved distributor or directly from ANTCLA
 * [Amazon](https://www.amazon.com/BLTouch-Leveling-Sensor-Premium-Printer/dp/B01FFV2TOS/ref=sr_1_1?m=A3O53RCZ1OROMM&s=merchant-items&ie=UTF8&qid=1483465267&sr=1-1#feature-bullets-btf)
 
 **ADVi3++ does not support and will not support clones.**
- ![](assets/counterfeit.jpg)
+
+![](assets/counterfeit.jpg)
 
 ## Installing BLTouch
 
@@ -210,5 +211,6 @@ G92 E0                                          ; zero the extruded length
 ```
 M420 S1
 ```
+
 
 
