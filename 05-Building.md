@@ -106,25 +106,30 @@ Environment i3plus-bltouch-debug        [SKIP]
 
 ## Atmel Studio 7
 
+![](assets/AtmelStudio7.png)
+
 [Atmel Studio 7](http://www.microchip.com/mplab/avr-support/atmel-studio-7) is a free, integrated development platform for developing and debugging all AVR&reg; and SAM microcontroller applications.
 
 As far as I know, using Atmel Studio is the only way to use **hardware debuggers** such as [AVR Dragon](https://www.microchip.com/DevelopmentTools/ProductDetails/ATAVRDRAGON) or [Atmel-ICE](http://www.microchip.com/developmenttools/ProductDetails/atatmel-ice).
 
-As Atmel Studio is not specific to Arduino development, it does not include Arduino Core library by default. You have to add it manually into **ADVi3++** project:
+As Atmel Studio is not specific to Arduino development, it does not include **Arduino Core library** by default. You have to add it manually into **ADVi3++** project:
 
-* Start Atmel Studio
-* Under **Start** menu, choose **New Example Project**
-* For **Device Family**, choose **Atmega**
-* For **Categpry**, choose **Application**
-* Click on the left of **Atmel - Atmel Corp** to see the different projects
-* Choose **megaAVR GPIO example - STK600 - ATmega2560**
-* Change parameters such as **Location** if you want. It is not important as we will not keep this project.
-* Click **OK**
+* From the [GitHub release page](https://github.com/andrivet/ADVi3pp-Marlin/releases), download **ArduinoCore-xxx.zip** (**xxx** is the version number, for example **ArduinoCore-3.0.2.zip**)
+* Unzip the file somewhere (your Desktop, a temporary folder, etc.)
+* Copy **ArduinoCore** into the root of the **ADVi3pp-Marlin** project (i.e. `ADVi3pp-Marlin` folder)
 
+![](assets/ArduinoCore.png)
+
+You can now open the project in **Atmel Studio**
+
+* Start **Atmel Studio 7**
 * Choose **Open Project...**
 * Navigate to the root of the ADVi3pp-Marlin project. This directory contains a file named **ADVi3pp-Marlin.atsln**. Choose it and click **Open**
-* Select **AtmelStudio Solution**
+* Wait until the project is loaded
 
+### Build a BLTouch release with Atmel Studio 7
+
+* To build a **BLTouch** release, click on the **Solution Configurations** drop-down and choose **BLTouch-Release**
 
 ## Arduino IDE
 
