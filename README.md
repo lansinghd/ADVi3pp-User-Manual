@@ -36,6 +36,14 @@ Currently, **ADVi3++** is only compatible with the Wanhao Duplicator i3 Plus ver
 
 **ADVi3++** is not compatible with printers that do not have a similar LCD panel (DGUS DWIN), i.e. it is not compatible with previous versions of Duplicator i3, i3 Mini, etc.
 
+## Become a Sponsor of this Project
+
+Working on **ADVi3++** takes a lot of time and effort. I make my best to release good quality software, useful and precise documents. I track bugs reported by users and replies to help requests on [Patreon](https://www.patreon.com/andrivet) and [Facebook](https://www.facebook.com/advi3pp/). I invest also time and money to implement new hardware features.
+
+If you like what I am doing, [**please consider supporting me as a patron on Patreon**](https://www.patreon.com/bePatron?u=6504486) so I can continue and develop new releases and new documents. Supporting this project is a guaranty for you that it will continue and become better and better.
+
+<a href="https://www.patreon.com/bePatron?u=6504486">![](assets/become-a-patron.png)</a>
+
 ## Source Code
 
 The full source code of **ADVi3++** is available in the following GitHub repositories:
