@@ -225,6 +225,10 @@ You probably enter calibration mode. There are two ways to solve this:
 * Press the screen very rapidly 20 times
 * Create a `CONFIG.TXT` file in the root of a microSD card with the following content:
 
+```
+TP_CORRECT
+```
+
 ### After reassembly, the LCD displays nothing
 
 Be sure the flat cable between the LCD and the mainboard is properly inserted in its connectors. This cable and the connectors are very fragile. 
