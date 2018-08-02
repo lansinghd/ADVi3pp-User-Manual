@@ -202,7 +202,7 @@ M190 S{material_bed_temperature_layer_0}        ; Wait for bed temperature to re
 M109 S{material_print_temperature_layer_0} T0   ; Set extruder temperature and wait
 G92 E0                                          ; Zero the extruded length
 M300                                            ; Play tone
-G1 F140 E30                                     ; extrude 3mm
+G1 F140 E30                                     ; extrude 30mm
 G92 E0                                          ; zero the extruded length
 ```
 
