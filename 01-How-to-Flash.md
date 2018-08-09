@@ -107,6 +107,8 @@ Then choose the option you are the most comfortable with.
 
 ### Mainboard Option 1 - Flashing using Cura
 
+**WARNING**: Some (recent) versions of Cura for Windows have a bug and it is not possible to flash with them (the flashing process gets stuck). Cura **3.3.x versions** are known to have this problem. [Version 3.2.1](https://ultimaker.com/en/products/ultimaker-cura-software/download-request/174) is working.
+
 * if net yet done, download Cura. I recommend either:
     * [Cura for Wanhao](http://www.wanhao3dprinter.com/Down/ShowArticle.asp?ArticleID=56) if you directly connect the printer to your computer with a USB cable
     * [Ultimaker Cura 3](https://ultimaker.com/en/products/ultimaker-cura) if, for example, you are using OctoPrint to print
@@ -161,6 +163,8 @@ To flash the firmware:
 * Reconnect the printer
 
 ### Mainboard Option 3 - Flashing using Arduino IDE
+
+**Note**: By default, the sources gives a RELEASE build **without** BLTouch support. To build a release with BLTouch support, please follow the instructions under [Build a BLTouch release with Arduino IDE](05-Building.md#build-a-bltouch-release-with-arduino-ide)
 
 * Connect your printer to your PC using the USB cable
 * Download [Arduino IDE](https://www.arduino.cc/en/Main/Software)

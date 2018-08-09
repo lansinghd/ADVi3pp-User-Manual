@@ -187,7 +187,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 This tool helps you to adjust the number of steps per millimeter for the X, Y and Z motors. There is no need to do this more than once, except if you change some mechanical parts.
 
-**Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the stepper motor, ...) Unless you change these parts (like the motors), there is no need to change this parameter. The default values are `81`, `81`, and `400.5`.*
+**Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the stepper motor, ...) Unless you change these parts (like the motors), there is no need to change these parameters. The default values are `80`, `80`, and `400`.*
 
 * Print a cube 20x20x20 mm  and enter it actual dimensions (make more than one measure for each side and take the average):
 
